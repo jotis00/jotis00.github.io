@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.navBar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background: rgba(196, 196, 196, 0);
+    font-weight: 300;
+}
+
+.navBar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: right;
+    margin-right: 35px;
+}
+
+.navBar ul li {
+    margin: .25rem 1rem;
+    padding: .4rem;
+}
+
+.navBar ul li a {
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    color: rgb(36, 36, 36);
+    transition: 0.1s;
+}
+
+.navBar ul li a:hover {
+    background-color: RGBA(249, 251, 227, .5);
+    border-radius: 5px;    
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+ 
+}
+
+#home {
+    background: url('https://images.unsplash.com/photo-1554632582-ac43a70ce6e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1937&q=80') no-repeat center center/ cover;
+}
+
+#nameLabelEl {
+    color: rgb(54, 54, 54);
+    font-size: 60px;
+    margin-top: 125px;
+    margin-left: 120px;
+    font-weight: 400;
+
+}
+
+#roleLabelEl {
+    color: rgb(36, 36, 36);
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 15px;
+    margin-left: 200px;
+    
+}
+
+#projects {
+    background-color: white;
+
+}
+#projectLabelEL {
+    color: rgb(54, 54, 54);
+    font-size: 35px;
+    margin-top:75px;
+    margin-left: 50px;
+    font-weight: 300;
+}
+
+.projectContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    margin-top: 6%;
+    justify-content: center;
+}
+
+.card {
+    transition: 0.3s;
+    width: 20%;
+    margin: 25px;
+    color: rgb(36, 36, 36);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+  }
+
+.card img {
+    border-radius: 0px 0px 0 0;
+    height: 180px;
+  }
+
+.projectInfoContainer {
+    padding: 4px 10px;
+}
+
+p {
+    font-size: 11px;
+    padding-top: 10px;
+}
+
+.card a {
+    font-size: 12px;
+    color: rgb(34, 34, 34);
+}
+
+
+#skills {
+    background-color: #EBF4FB;;
+}
+
+#skillsLabelEl {
+    color: rgb(54, 54, 54);
+    font-size: 35px;
+    margin-top:75px;
+    margin-left: 50px;
+    font-weight: 300;
+}
+
+.skillsContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.skillImg img {
+    width: 125px;
+    margin: 25px;
+}
+
+#js {
+    width: 95px;
+}
+#nodejs {
+    width: 115px;
+    margin: 30px;
+}
+
+#contact {
+    background-color: white ;
+}
+
+#contactLabelEl {
+    color: rgb(54, 54, 54);
+    font-size: 35px;
+    margin-top: 70px;
+    margin-left: 50px;
+    font-weight: 300;
+}
+
+#email {
+    margin-top: 20px;
+    margin-left: 120px;
+    color: rgb(36, 36, 36);
+    font-size: 22px;
+    font-weight: 300;
+}
+
+
+#linkedin {
+    color: rgb(36, 36, 36);
+    font-weight: 300;
+    margin-top: 20px;
+    margin-left: 120px;
+    font-size: 17px;
+}
+
+
+#aboutLabelEl {
+    color: rgb(54, 54, 54);
+    font-size: 35px;
+    margin-top: 100px;
+    margin-left: 50px;
+    font-weight: 300;
+}
+
+#aboutP {
+    color: rgb(36, 36, 36);
+    font-weight: 300;
+    margin-top: 20px;
+    margin-left: 120px;
+    margin-right: 120px;
+    font-size: 19px;
+    line-height: 1.7;
+}
